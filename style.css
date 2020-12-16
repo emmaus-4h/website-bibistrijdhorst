@@ -3,9 +3,9 @@
 html, body {
     height: 100%;
     padding: 0;
-    background-color: #EEEEEE;  
+    background-color: ghostwhite; 
     
-    color: #303030;
+    color: black;
     font: Verdana, Arial, Sans-Serif;
 }
 
@@ -18,15 +18,20 @@ main {
 
 
 article {
+    position: relative;
     text-align: justify;
+    z-index: 8;
 }
 
 
 header {
-    color: skyblue;
     text-align: center;
 }
-
+#hero>img {
+  margin-top: 10px;
+  z-index: 1;
+  width: 100%;
+}
 
 footer {
     text-align: center;
@@ -36,24 +41,45 @@ footer {
 
 /* specifieke stijlen */
 
-img.zweefLinks {
-    float: left;
-    margin-right: 15px;
+
+.links{
+    margin-right: 40px;
+    width: 250px;
 }
+
+
+.onderin{
+    margin-right: 40px;
+    width: 250px;
+}
+
+
+.rechts{
+    margin-right: 40px;
+    width: 45%;
+}
+
+  
 
 .smalltext {
     font-size: 0.7em;
 }
 
 a {
-    color: skyblue;
+    color: blueviolet;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
-
+.theader {
+  background-color: skyblue;
+}
+.tlabel {
+  text-align: center;
+  font-weight:  bold;
+}
 
 /* navigatiebalk */
 nav ul {
@@ -84,6 +110,19 @@ nav li a.active {
     background-color: skyblue;
 }
 
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px; 
+  /* Geeft cellpadding aan */
+}
+tr:nth-child(odd) {
+    background-color: #dfe7f2;
+    color: #000000;
+}
 
+.txt-bold{
+  font-weight: bold;
+}
 
 
